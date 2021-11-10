@@ -252,7 +252,7 @@ The above defines the function, sets the double count to zero from the get go. L
 
 
 ## Challenge 7 ##
-# Adding and removing dots# 
+# Adding and removing dots # 
 
 *Write a function named add_dots that takes a string and adds "." in between each letter. For example, calling add_dots("test") should return the string "t.e.s.t".*
 
