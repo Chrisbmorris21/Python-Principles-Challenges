@@ -54,3 +54,33 @@ print(capital_indexes("HeLlO"))
 ```
 
 The Test Code
+
+
+
+## Challenge 2 ##
+*Middle letter
+Write a function named mid that takes a string as its parameter. Your function should extract and return the middle letter. If there is no middle letter, your function should return the empty string. For example, mid("abc") should return "b" and mid("aaaa") should return "".*
+
+Non negotiables against! First we must
+* create a function named mid
+* takes a string as a parameter
+* take the middle letter and return it
+* return empty string if no middle
+
+Right so thought process is as follows:
+* is the string an odd or an even number? 
+* if even, how can we can bypass everything and return an empty string?
+That will be an entire side of the conditional already done so we will do that first.
+
+
+```python
+def mid(string):
+
+    if int(len(string)) % 2 == 0:
+        return ""
+    else:
+        return "odd" 
+ ```
+ 
+ The above chunk of code defines the function and passes the paramater of string. The conditioinal checks if there are any numbers in existance beyond the decimal point where applicable when divided by two. If there are no numbers beyond the decimal, we can assume the number is even. I have set the conditional branch to return "" where teh condition for the length being even is true. The condition for the length theing odd is below it and has the placeholder of return "odd" at the moment.
+        
