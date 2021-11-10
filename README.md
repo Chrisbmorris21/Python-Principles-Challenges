@@ -125,3 +125,29 @@ statuses = {
 ```
 
 *In this case, the number of people online is 2. Write a function named online_count that takes one parameter. The parameter is a dictionary that maps from strings of names to the string "online" or "offline", as seen above. Your function should return the number of people who are online.*
+
+I will want to create a function which iterates through the dictionary adding one to an int, and then return int at the end.
+
+```python
+def online_count(statuses):
+    
+    countOnline = 0
+    
+    for key in statuses:
+```
+
+Defines the functions and assigns value from dicitionary to key while it iterates
+
+```python
+if statuses[key] == "online":
+            countOnline = countOnline+1
+```
+Gets paired data and determines wether it is online or not, if it is online add one to our int tracking the online number
+
+
+```python
+    return int(countOnline)
+
+online_count(statuses)
+```
+Return the int and call the function to test it with our test dictionary named statuses
