@@ -222,3 +222,30 @@ First I create the function as describe which has two parameters passed to it. I
 *The goal of this challenge is to analyze a string to check if it contains two of the same letter in a row. For example, the string "hello" has l twice in a row, while the string "nono" does not have two identical letters in a row.*
 
 *Define a function named double_letters that takes a single parameter. The parameter is a string. Your function must return True if there are two identical letters in a row in the string, and False otherwise.*
+
+```python
+def double_letters(string):
+    doubles = 0
+    for x in range(len(string)):
+
+        y = int(x + 1)
+        
+        
+        if x != (int(len(string))-1):
+            a = string[x]
+            b = string[y]
+            
+            if a == b:
+                doubles = doubles+1
+                #print(doubles)
+            else:
+                a = ""
+                b = ""
+
+    if doubles > 0:
+        return True
+    else:
+        return False
+```
+
+The above defines the function, sets the double count to zero from the get go. Loop iterates through each character of the word, and then gets its neighbor, unless its the last letter in the array (otherwise it would return an index out of range error). It compares the two characters, and resets them afterwards so contamination of old variables can't happen. If both variables are equal, returns True, else returns False.
