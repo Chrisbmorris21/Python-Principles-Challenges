@@ -163,3 +163,13 @@ Return the int and call the function to test it with our test dictionary named s
 *Calling the function multiple times should (usually) return different numbers.*
 
 *For example, calling random_number() some times might first return 42, then 63, then 1.*
+
+I will start by importing the random library
+
+```python
+import random
+
+def random_number():
+    return (random.randint(1,100))
+```
+This code defines the function, and then within it returns a random int between (and including) 1 and 100
