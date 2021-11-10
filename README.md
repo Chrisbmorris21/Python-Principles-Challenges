@@ -75,12 +75,40 @@ That will be an entire side of the conditional already done so we will do that f
 
 ```python
 def mid(string):
-
-    if int(len(string)) % 2 == 0:
+    x = len(string)
+    if x % 2 == 0:
         return ""
-    else:
-        return "odd" 
  ```
  
- The above chunk of code defines the function and passes the paramater of string. The conditioinal checks if there are any numbers in existance beyond the decimal point where applicable when divided by two. If there are no numbers beyond the decimal, we can assume the number is even. I have set the conditional branch to return "" where teh condition for the length being even is true. The condition for the length theing odd is below it and has the placeholder of return "odd" at the moment.
+ The above chunk of code defines the function and passes the paramater of string. We assign the length of the string to the variable **x**. The conditional checks if there are any numbers after the decimal when divided by two. If there are no numbers beyond the decimal, we can assume the number is even. I have set the conditional branch to return "" where the condition for the length being even is true as has asked by the brief.
+
+
+To get the middle number, i can use this formula:
+ 
+ ### (x - 1) / 2 = key in array ###
+ 
+ For example:
+ 
+```
+[0][1][2][3][4] 
+5 - 1 = 4
+4 / 2 = [2]
+```
+ 
+```
+[0][1][2][3][4][5][6][7][8]
+9 - 1 = 8
+8 / 2 = [4]
+```
+
+Our second chunk of code is very simple, we will work with the same variable for brevity.
+
+```python
+    else:
+        x = x - 1
+        x = int(x / 2)
+        return string[x]
+```
+This chunk of code takes the length of the string and applies the above calculations to it. it will return the key we need to access the character of the string. it then returns the value assigned to that key on return.
+
         
