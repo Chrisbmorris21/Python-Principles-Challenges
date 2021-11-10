@@ -12,16 +12,16 @@
 #test function
 
 def capital_indexes(string):
+    
     characterArray = []
     x = string.split()
+ 
     for i in range(len(x)):
         y = str(x[i])
         for i in range(len(y)):
             if y[i].isupper():
                 characterArray.append(i)
-                print("ISUPPER")
-                print(i)
-
+                
         return(characterArray)
 
 print(capital_indexes("HeLlO"))
