@@ -307,3 +307,30 @@ def count(string):
             metaphor = metaphor + 1
     return int(metaphor)
 ```
+## Challenge 9 ##
+
+#Anagrams#
+
+*Two strings are anagrams if you can make one from the other by rearranging the letters.*
+
+*Write a function named is_anagram that takes two strings as its parameters. Your function should return True if the strings are anagrams, and False otherwise.*
+
+*For example, the call is_anagram("typhoon", "opython") should return True while the call is_anagram("Alice", "Bob") should return False.*
+
+```python
+def is_anagram(string1, string2):
+
+    string1 = sorted(string1)
+    string1 = "".join(string1)
+
+    string2 = sorted(string2)
+    string2 = "".join(string2)
+
+    if string1 == string2:
+        #print("True")
+        return True
+
+    else:
+        #print("False")
+        return False
+```
