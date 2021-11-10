@@ -249,3 +249,61 @@ def double_letters(string):
 ```
 
 The above defines the function, sets the double count to zero from the get go. Loop iterates through each character of the word, and then gets its neighbor, unless its the last letter in the array (otherwise it would return an index out of range error). It compares the two characters, and resets them afterwards so contamination of old variables can't happen. If both variables are equal, returns True, else returns False.
+
+
+## Challenge 7 ##
+# Adding and removing dots# 
+
+*Write a function named add_dots that takes a string and adds "." in between each letter. For example, calling add_dots("test") should return the string "t.e.s.t".*
+
+*Then, below the add_dots function, write another function named remove_dots that removes all dots from a string. For example, calling remove_dots("t.e.s.t") should return "test".*
+
+*If both functions are correct, calling remove_dots(add_dots(string)) should return back the original string for any string.*
+
+*(You may assume that the input to add_dots does not itself contain any dots.)*
+
+```python
+def add_dots(string):
+    newString = ""
+    for i in range(len(string)):
+            newString += string[i]
+            if i < (len(string)-1):
+                newString += "."
+    return newString
+
+
+
+
+def remove_dots(string):
+    dotsExist = 0
+    newString = ""
+
+    for i in range(len(string)):
+        if string[i] == ".":
+            dotsExist = int(dotsExist+1)
+        else:
+            newString += string[i]
+
+    return newString
+```
+
+## Challenge 8 ##
+# Counting syllables #
+*Define a function named count that takes a single parameter. The parameter is a string. The string will contain a single word divided into syllables by hyphens, such as these:*
+
+*"ho-tel"*
+*"cat"*
+*"met-a-phor"*
+*"ter-min-a-tor"*
+*Your function should count the number of syllables and return it.*
+
+*For example, the call count("ho-tel") should return 2.*
+
+```python
+def count(string):
+    metaphor = 1
+    for i in range(len(string)):
+        if string[i] == "-":
+            metaphor = metaphor + 1
+    return int(metaphor)
+```
