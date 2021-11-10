@@ -12,6 +12,8 @@ The non-negotiables in this case is
 * It can only take a **single parameter** and that must be a **string**.
 * It should return a **list** of all **indexes** that have capital letters.
 
+**Find this example in CapitalIndexes.py**
+
 By analysing a question in such a way, a lot of the work around the structure is already done for me. It also makes it easy for me to break down anything I may need to look up in the future. I will always attempt to learn or incorporate something new in every challenge.
 
 ```python
@@ -60,7 +62,11 @@ The Test Code
 
 ## Challenge 2 ##
 # Middle letter #
-Write a function named mid that takes a string as its parameter. Your function should extract and return the middle letter. If there is no middle letter, your function should return the empty string. For example, mid("abc") should return "b" and mid("aaaa") should return "".*
+
+
+*Write a function named mid that takes a string as its parameter. Your function should extract and return the middle letter. If there is no middle letter, your function should return the empty string. For example, mid("abc") should return "b" and mid("aaaa") should return "".*
+
+**Find this example in mid.py**
 
 Non negotiables against! First we must
 * create a function named mid
@@ -113,8 +119,10 @@ Our second chunk of code is very simple, we will work with the same variable for
 This chunk of code takes the length of the string and applies the above calculations to it. it will return the key we need to access the character of the string. it then returns the value assigned to that key on return.
 
 ## Challenge 3 ##
-
 # Online status #
+
+**Find this example in OnlineStatus.py**
+
 *The aim of this challenge is, given a dictionary of people's online status, to count the number of people who are online. For example, consider the following dictionary:*
 
 ```python
@@ -158,11 +166,16 @@ Return the int and call the function to test it with our test dictionary named s
 
 ## Challenge 4 ##
 # Randomness #
+
+
+
 *Define a function, random_number, that takes no parameters. The function must generate a random integer between 1 and 100, both inclusive, and return it.*
 
 *Calling the function multiple times should (usually) return different numbers.*
 
 *For example, calling random_number() some times might first return 42, then 63, then 1.*
+
+**Find this example in Random.py**
 
 I will start by importing the random library
 
@@ -179,3 +192,5 @@ This code defines the function, and then within it returns a random int between 
 *Write a function named only_ints that takes two parameters. Your function should return True if both parameters are integers, and False otherwise.*
 
 *For example, calling only_ints(1, 2) should return True, while calling only_ints("a", 1) should return False.*
+
+**Find this example in TypeCheck.py**
