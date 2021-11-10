@@ -1,5 +1,5 @@
 # Python-Principles-Challenges
-My attemps at the Python Principles code challenges
+My attemps at the Python Principles code challenges. What I intend to do with this excersize is to cycle through each of the code challenges, then using what I pick up from the next challenges, redo the code challenges and see if I can shorten my code and make it run more efficiently. If the code is verbose to begin with, please bear with me. The aim of this is to learn from these challenges and then to see if I can log my improvements over time in this document.
 
 ## Challenge 1 ##
 # Capital Indexes #
@@ -177,7 +177,7 @@ Return the int and call the function to test it with our test dictionary named s
 
 **Find this example in Random.py**
 
-I will start by importing the random library
+I will start by importing the random library because I want that random selecting goodness
 
 ```python
 import random
@@ -194,3 +194,24 @@ This code defines the function, and then within it returns a random int between 
 *For example, calling only_ints(1, 2) should return True, while calling only_ints("a", 1) should return False.*
 
 **Find this example in TypeCheck.py**
+
+```python
+def only_ints(param1 , param2):
+    
+    condition1 = False
+    condition2 = False
+    
+    if type(param1) == int:
+        condition1 = True
+    if type(param2) == int:
+        condition2 = True
+
+    if condition1 and condition2 == True:
+        return True
+    else:
+        return False
+    
+only_ints(1, 2)
+```
+
+First I create the function as describe which has two parameters passed to it. I then declare two local booles within the scope of the function which are automatically defaulted to false. The next conditionals check the types of each parameter and change the booles to True respectively if applicable. I then get a conditional which returns the appropriate bool depending on the prior booles.
