@@ -364,3 +364,15 @@ def flatten(array):
 
     return flatArray
 ```
+
+## Challenge 11 ##
+# Min Maxing #
+
+```python
+def largest_difference(numbers):
+    numbers.sort()
+    x = min(numbers)
+    y = max(numbers)
+    z = y - x
+    return z
+```
