@@ -387,3 +387,41 @@ def div_3(number):
     else:
         return False
 ```
+
+## Challenge 13 ##
+# Tic Tac Toe #
+
+```python
+
+def get_row_col(string):
+    
+    LetRow = string[0] 
+    NumRow = string[1]
+
+    if (LetRow) == "A":
+        x = 0
+    if (LetRow) == "B":
+        x = 1
+    if (LetRow) == "C":
+        x = 2
+
+
+    if (NumRow) == "1":
+        y = 0
+    if (NumRow) == "2":
+        y = 1
+    if (NumRow) == "3":
+        y = 2
+    
+    newTuple = (y,x)
+    return newTuple
+    
+
+    
+    NumArray = [1,2,3]
+    LetArray = ["A","B","C"]
+
+
+get_row_col("A3")
+
+```
