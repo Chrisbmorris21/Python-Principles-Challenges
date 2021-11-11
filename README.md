@@ -376,3 +376,14 @@ def largest_difference(numbers):
     z = y - x
     return z
 ```
+
+## Challenge 12 ##
+# Divisible by 3 # 
+
+```python
+def div_3(number):
+    if number % 3 == 0:
+        return True
+    else:
+        return False
+```
