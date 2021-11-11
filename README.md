@@ -454,3 +454,16 @@ def palindrome(string):
         print("False")
         return False
 ```
+
+## Challenge 15 ##
+# Up Down # 
+```python
+def up_down(number):
+    
+    lesser = number - 1
+    higher = number + 1
+
+    newTuple = (lesser, higher)
+    
+    return newTuple
+```
