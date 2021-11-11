@@ -425,3 +425,32 @@ def get_row_col(string):
 get_row_col("A3")
 
 ```
+
+## Challenge 14 ##
+
+# Palindrome # 
+
+```python
+def palindrome(string):
+    array = []
+    array2 = []
+    stringLength = len(string)
+    print(stringLength)
+
+    for i in range(stringLength):
+        array.append(string[i])
+        array2.append(string[i])
+        
+    array2.reverse()
+    
+    firstValue = ''.join(array)
+    secondValue = ''.join(array2)
+
+
+    if firstValue == secondValue:
+        print("True")
+        return True
+    else:
+        print("False")
+        return False
+```
