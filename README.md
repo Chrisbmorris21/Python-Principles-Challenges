@@ -334,3 +334,33 @@ def is_anagram(string1, string2):
         #print("False")
         return False
 ```
+
+## Challenge 10 ##
+
+# Flattening Lists #
+
+*Write a function that takes a list of lists and flattens it into a one-dimensional list.*
+
+*Name your function flatten. It should take a single parameter and return a list.*
+
+*For example, calling:*
+
+*flatten([[1, 2], [3, 4]])*
+*Should return the list:*
+
+*[1, 2, 3, 4]*
+
+```python
+def flatten(array):
+    flatArray = []
+    
+    lengthList1 = len(array)
+    for i in range(lengthList1):
+        newList = array[i]
+        
+        for x in range(len(newList)):
+            print(newList[x])
+            flatArray.append(newList[x])
+
+    return flatArray
+```
